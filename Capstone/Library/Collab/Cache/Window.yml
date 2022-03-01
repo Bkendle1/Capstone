@@ -13,8 +13,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - .collabignore
+    - Assets/CameraFollow.cs.meta
+    - Assets/Graphics/Animations/Player.controller
+    - Assets/Graphics/Animations/attackOne0.controller
+    - Assets/Graphics/Animations/attackOne0.controller.meta
+    - Assets/Graphics/Animations/fall0.controller
+    - Assets/Graphics/Animations/fall0.controller.meta
+    - Assets/Graphics/Animations/player_attackOne.anim
+    - Assets/Graphics/Animations/player_attackOne.anim.meta
+    - Assets/Graphics/Animations/player_glide.anim
+    - Assets/Graphics/Animations/player_glide.anim.meta
+    - Assets/Graphics/Animations/player_idle.anim
+    - Assets/Graphics/Animations/player_jump.anim
+    - Assets/Graphics/Animations/player_run.anim
+    - Assets/Graphics/Animations/player_wallSlide.anim
+    - Assets/Graphics/Dark Platformer SET2/1. main platforms.png.meta
+    - Assets/Graphics/Warrior/Aniamtion/Attack.anim
+    - Assets/Graphics/Warrior/Sprite Sheet/Warrior_Sheet-Effect.png.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scripts/CameraController.cs.meta
+    - Assets/Scripts/PlayerController.cs
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - 
+    m_Values: 0000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

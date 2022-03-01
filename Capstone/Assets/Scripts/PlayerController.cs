@@ -33,7 +33,13 @@ public class PlayerController : MonoBehaviour
     [Header("Gliding")]
     public float glidingSpeed;
     private bool isGliding;
-    
+
+    [Header("Wall Jumping/Sliding")]
+    public Transform wallCheckCollider;
+    public LayerMask whatIsWall;
+    const float wallCheckRadius = 0.2f;
+    public float slideFactor = 0.2f;
+    private bool isWallSliding = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -49,6 +55,7 @@ public class PlayerController : MonoBehaviour
         if (dashRechargeCounter > 0)
         {
             dashRechargeCounter -= Time.deltaTime;
+
         }
         else
         {
@@ -133,8 +140,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * .5f);
         }
+
+        //Wall Jump/Slide
+        wallCheck();
         
-         
         //Gliding
         isGliding = false;
         if(Input.GetButton("Jump") && rb.velocity.y < 0)
@@ -143,9 +152,9 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, -glidingSpeed);
         } 
         
-
+        
         anim.SetBool("grounded", isGrounded());
-        //anim.SetBool("grabbing", isGrabbing);
+        anim.SetBool("wallSliding", isWallSliding);
         anim.SetBool("gliding", isGliding);
         anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
         
@@ -158,6 +167,26 @@ public class PlayerController : MonoBehaviour
         return raycastHit.collider != null;
     }
 
+    void wallCheck()
+    {
+        float horizontalMove = Input.GetAxisRaw("Horizontal");
+        if(Physics2D.OverlapCircle(wallCheckCollider.position, wallCheckRadius, whatIsWall) 
+            && Mathf.Abs(horizontalMove)>0
+            && rb.velocity.y <0
+            && !isGrounded())
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, -slideFactor);
+            if (Input.GetButtonDown("Jump"))
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jForce);
+            }
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
     public void showAfterImage()
     {
         //create a copy of the afterimage prefab
