@@ -5,10 +5,10 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     private PlayerController player;
-    public BoxCollider2D boundsBox;
+    [SerializeField] private BoxCollider2D boundsBox;
     private float halfHeight, halfWidth;
 
-    public Transform backBG, frontBG;
+    [SerializeField] private Transform backBG, frontBG;
 
     private Vector2 lastPos;
     void Start()

@@ -4,51 +4,78 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Attack")]
+    private bool isAttacking = false;
+    private int index = 0;
+    [SerializeField] GameObject attackHitBox;
+
     [Header("Movement")]
-    public float moveSpeed = 10;
-    public float jForce = 15;
+    [SerializeField] private float moveSpeed = 10;
+    [SerializeField] private float jForce = 15;
     private bool canDoubleJump;
     
     [Header("Dash")]
-    public float waitAfterDashing;
+    [SerializeField] private float waitAfterDashing;
     private float dashRechargeCounter;
-    public float dashSpeed, dashTime;
+    [SerializeField] private float dashSpeed, dashTime;
     private float dashCounter;
-    public SpriteRenderer spriteRender, afterImage;
-    public float afterImgLifetime, timeBetweenAfterImgs;
+    [SerializeField] private SpriteRenderer spriteRender, afterImage;
+    [SerializeField] private float afterImgLifetime, timeBetweenAfterImgs;
     private float afterImgCounter;
-    public Color afterImgColor;
+    [SerializeField] private Color afterImgColor;
 
     [Header("Coyote Time")]
-    public float hangTime;
+    [SerializeField] private float hangTime;
     private float hangCounter;
 
    //References
-    public LayerMask whatIsGround;
+    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private LayerMask whatIsWall;
 
     private Rigidbody2D rb;
     private CapsuleCollider2D capsuleCollider;
     private Animator anim;
 
     [Header("Gliding")]
-    public float glidingSpeed;
+    [SerializeField] private float glidingSpeed;
     private bool isGliding;
-    
+
+    [Header("Wall Jumping/Sliding")]
+    [SerializeField] private Transform wallCheckCollider;
+    const float wallCheckRadius = 0.2f;
+    [SerializeField] private float slideFactor = 0.2f;
+    private bool isWallSliding = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
         spriteRender = GetComponent<SpriteRenderer>();
-
+        attackHitBox.SetActive(false);
     }
 
     void Update()
-    {   
+    {
+
+        //Attack
+
+        if (Input.GetButtonDown("Fire1") && !isAttacking)
+        {
+            isAttacking = true;
+            index++;
+            if(index > 3)
+            {
+                index = 1;
+            }
+            anim.Play("player_attack" + index);
+            StartCoroutine(DoAttack());
+        }
+
         //Dash 
         if (dashRechargeCounter > 0)
         {
             dashRechargeCounter -= Time.deltaTime;
+
         }
         else
         {
@@ -76,18 +103,21 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-
+            //PLAYER CANT DOUBLE JUMP AFTER WALL JUMP
             //Movement
-            rb.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), rb.velocity.y);
-        
-            //Flip Character
-            if (rb.velocity.x < 0)
+            if (!isWallSliding)
             {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
-            else if (rb.velocity.x > 0)
-            {
-                transform.localScale = Vector3.one;
+                rb.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), rb.velocity.y);
+
+                //Flip Character
+                if (rb.velocity.x < 0)
+                {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                }
+                else if (rb.velocity.x > 0)
+                {
+                    transform.localScale = Vector3.one;
+                }
             }
         }
         
@@ -133,8 +163,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * .5f);
         }
+
+        //Wall Jump/Slide
+        wallCheck();
         
-         
         //Gliding
         isGliding = false;
         if(Input.GetButton("Jump") && rb.velocity.y < 0)
@@ -143,11 +175,13 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, -glidingSpeed);
         } 
         
-
-        anim.SetBool("grounded", isGrounded());
-        //anim.SetBool("grabbing", isGrabbing);
-        anim.SetBool("gliding", isGliding);
-        anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
+        if(!isAttacking)
+        {
+            anim.SetBool("grounded", isGrounded());
+            anim.SetBool("wallSliding", isWallSliding);
+            anim.SetBool("gliding", isGliding);
+            anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
+        }
         
     }//end of Update()
 
@@ -158,6 +192,26 @@ public class PlayerController : MonoBehaviour
         return raycastHit.collider != null;
     }
 
+    void wallCheck()
+    {
+        float horizontalMove = Input.GetAxisRaw("Horizontal");
+        if(Physics2D.OverlapCircle(wallCheckCollider.position, wallCheckRadius, whatIsWall) 
+            && horizontalMove != 0
+            && rb.velocity.y < 0
+            && !isGrounded())
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, -slideFactor);
+            if (Input.GetButtonDown("Jump"))
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jForce);
+            }
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
     public void showAfterImage()
     {
         //create a copy of the afterimage prefab
@@ -171,5 +225,13 @@ public class PlayerController : MonoBehaviour
         Destroy(img.gameObject, afterImgLifetime);
 
         afterImgCounter = timeBetweenAfterImgs;
+    }
+   
+    private IEnumerator DoAttack()
+    {
+        attackHitBox.SetActive(true);
+        yield return new WaitForSeconds(.3f);
+        attackHitBox.SetActive(false);
+        isAttacking = false;
     }
 }

@@ -13,8 +13,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - Assets/Graphics/Animations/Idle_0.controller
+    - Assets/Graphics/Animations/Owlet_Monster.controller
+    - Assets/Graphics/Animations/Player.controller
+    - Assets/Graphics/Animations/Take Hit_0.controller
+    - Assets/Graphics/Animations/Take Hit_0.controller.meta
+    - Assets/Graphics/Animations/player_attack1.anim
+    - Assets/Graphics/Animations/player_attack1.anim.meta
+    - Assets/Graphics/Animations/player_attack2.anim
+    - Assets/Graphics/Animations/player_attack2.anim.meta
+    - Assets/Graphics/Animations/player_attack3.anim
+    - Assets/Graphics/Animations/player_attack3.anim.meta
+    - Assets/Graphics/Animations/player_glide.anim
+    - Assets/Graphics/Animations/player_idle.anim
+    - Assets/Graphics/Animations/windGolem_hit.anim
+    - Assets/Graphics/Animations/windGolem_hit.anim.meta
+    - Assets/Graphics/Animations/windGolem_idle.anim
+    - Assets/Graphics/Mobs/Sprites/Wind Golem Creature/Sprite Sheets/Idle.png.meta
+    - Assets/Graphics/Mobs/Sprites/Wind Golem Creature/Sprite Sheets/Take Hit.png.meta
+    - Assets/Graphics/Warrior/Animation.meta
+    - Assets/Graphics/Warrior/Animation/Attack.anim
+    - Assets/Graphics/Warrior/Animation/Attack.anim.meta
+    - Assets/Graphics/Warrior/Animation/Croush.anim
+    - Assets/Graphics/Warrior/Animation/Croush.anim.meta
+    - Assets/Graphics/Warrior/Animation/Dash NoDust.anim
+    - Assets/Graphics/Warrior/Animation/Dash NoDust.anim.meta
+    - Assets/Graphics/Warrior/Animation/Dash-Attack NoDust.anim
+    - Assets/Graphics/Warrior/Animation/Dash-Attack NoDust.anim.meta
+    - Assets/Graphics/Warrior/Animation/Dash-Attack.anim
+    - Assets/Graphics/Warrior/Animation/Dash-Attack.anim.meta
+    - Assets/Graphics/Warrior/Animation/Dash.anim
+    - Assets/Graphics/Warrior/Animation/Dash.anim.meta
+    - Assets/Graphics/Warrior/Animation/Death NoEffect.anim
+    - Assets/Graphics/Warrior/Animation/Death NoEffect.anim.meta
+    - Assets/Graphics/Warrior/Animation/Death.anim
+    - Assets/Graphics/Warrior/Animation/Death.anim.meta
+    - Assets/Graphics/Warrior/Animation/Edge-Grab.anim
+    - Assets/Graphics/Warrior/Animation/Edge-Grab.anim.meta
+    - Assets/Graphics/Warrior/Animation/Edge-Idle.anim
+    - Assets/Graphics/Warrior/Animation/Edge-Idle.anim.meta
+    - Assets/Graphics/Warrior/Animation/Fall.anim
+    - Assets/Graphics/Warrior/Animation/Fall.anim.meta
+    - Assets/Graphics/Warrior/Animation/Hurt NoEffect.anim
+    - Assets/Graphics/Warrior/Animation/Hurt NoEffect.anim.meta
+    - Assets/Graphics/Warrior/Animation/Hurt.anim
+    - Assets/Graphics/Warrior/Animation/Hurt.anim.meta
+    - Assets/Graphics/Warrior/Animation/Idle.anim
+    - Assets/Graphics/Warrior/Animation/Idle.anim.meta
+    - Assets/Graphics/Warrior/Animation/JumptoFall.anim
+    - Assets/Graphics/Warrior/Animation/JumptoFall.anim.meta
+    - Assets/Graphics/Warrior/Animation/Ladder.anim
+    - Assets/Graphics/Warrior/Animation/Ladder.anim.meta
+    - Assets/Graphics/Warrior/Animation/Run.anim
+    - Assets/Graphics/Warrior/Animation/Run.anim.meta
+    - Assets/Graphics/Warrior/Animation/Slide.anim
+    - Assets/Graphics/Warrior/Animation/Slide.anim.meta
+    - Assets/Graphics/Warrior/Animation/Wall-Slide.anim
+    - Assets/Graphics/Warrior/Animation/Wall-Slide.anim.meta
+    - Assets/Graphics/Warrior/Animation/WallSlide NoDust.anim
+    - Assets/Graphics/Warrior/Animation/WallSlide NoDust.anim.meta
+    - Assets/Graphics/Warrior/Animation/Warrior.controller
+    - Assets/Graphics/Warrior/Animation/Warrior.controller.meta
+    - Assets/Graphics/Warrior/Animation/jump.anim
+    - Assets/Graphics/Warrior/Animation/jump.anim.meta
+    - Assets/Graphics/Warrior/Sprite Sheet/Warrior_Sheet-Effect.png.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scripts/CameraController.cs
+    - Assets/Scripts/PlayerController.cs
+    - 
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
