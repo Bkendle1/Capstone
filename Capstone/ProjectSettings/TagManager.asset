@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - UI
   - Wall
   - NoCollision
-  - 
-  - 
-  - 
+  - Enemies
+  - Player
+  - Collectibles
   - 
   - 
   - 
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 4098747293
+    locked: 0
+  - name: Collectibles
+    uniqueID: 3423633689
     locked: 0
   - name: Enemy
     uniqueID: 504596199

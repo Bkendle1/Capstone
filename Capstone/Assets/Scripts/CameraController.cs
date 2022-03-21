@@ -23,6 +23,7 @@ public class CameraController : MonoBehaviour
     {
         if (player != null) //check if player isn't active in scene, like if they're killed
         {
+            
             transform.position = new Vector3(
                 Mathf.Clamp(player.transform.position.x, boundsBox.bounds.min.x + halfWidth, boundsBox.bounds.max.x - halfWidth),
                  Mathf.Clamp(player.transform.position.y, boundsBox.bounds.min.y + halfHeight, boundsBox.bounds.max.y - halfHeight),

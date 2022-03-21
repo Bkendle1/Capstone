@@ -53,13 +53,19 @@
     <UnityVersion>2020.3.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\Patrol\EnemyPatrol.cs" />
+    <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\HealthBarFollow.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Graphics\FemaleWarrior\License.txt" />
-     <None Include="Assets\Graphics\FemaleWarrior\Contact.txt" />
+     <None Include="Assets\Graphics\Warrior\License.txt" />
+     <None Include="Assets\Graphics\Warrior\Contact.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

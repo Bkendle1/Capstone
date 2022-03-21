@@ -40,8 +40,6 @@ public class PlayerController : MonoBehaviour
     const float wallCheckRadius = 0.2f;
     public float slideFactor = 0.2f;
     private bool isWallSliding = false;
-    public float wallJumpTime = .2f;
-    private float wallJumpCounter;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -52,123 +50,114 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {
-        //Wall Jump/Slide
-        wallCheck();
-        if (wallJumpCounter <= 0)
+    {   
+        //Dash 
+        if (dashRechargeCounter > 0)
+        {
+            dashRechargeCounter -= Time.deltaTime;
+
+        }
+        else
+        {
+            if (Input.GetButtonDown("Fire3"))
+            {
+                dashCounter = dashTime;
+                showAfterImage();
+            }
+        }
+
+        if (dashCounter > 0)
+        {
+            //length of dash
+            dashCounter -= Time.deltaTime;
+
+            rb.velocity = new Vector2(dashSpeed * transform.localScale.x, rb.velocity.y);
+
+            afterImgCounter -= Time.deltaTime;
+            if(afterImgCounter <= 0)
+            {
+                showAfterImage();
+            }
+
+            dashRechargeCounter = waitAfterDashing;
+        }
+        else
         {
 
-            //Dash 
-            if (dashRechargeCounter > 0)
+            //Movement
+            rb.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), rb.velocity.y);
+        
+            //Flip Character
+            if (rb.velocity.x < 0)
             {
-                dashRechargeCounter -= Time.deltaTime;
-
+                transform.localScale = new Vector3(-1f, 1f, 1f);
             }
-            else
+            else if (rb.velocity.x > 0)
             {
-                if (Input.GetButtonDown("Fire3"))
-                {
-                    dashCounter = dashTime;
-                    showAfterImage();
-                }
+                transform.localScale = Vector3.one;
             }
-
-            if (dashCounter > 0)
-            {
-                //length of dash
-                dashCounter -= Time.deltaTime;
-
-                rb.velocity = new Vector2(dashSpeed * transform.localScale.x, rb.velocity.y);
-
-                afterImgCounter -= Time.deltaTime;
-                if (afterImgCounter <= 0)
-                {
-                    showAfterImage();
-                }
-
-                dashRechargeCounter = waitAfterDashing;
-            }
-            else
-            {
-
-                //Movement
-                rb.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), rb.velocity.y);
-
-                //Flip Character
-                if (rb.velocity.x < 0)
-                {
-                    transform.localScale = new Vector3(-1f, 1f, 1f);
-                }
-                else if (rb.velocity.x > 0)
-                {
-                    transform.localScale = Vector3.one;
-                }
-            }
-
-            //Coyote Time
-            if (isGrounded())
-            {
-                hangCounter = hangTime;
-            }
-            else
-            {
-                hangCounter -= Time.deltaTime;
-            }
-
-           
-
-            //Jump
-            if (Input.GetButtonDown("Jump"))
-            {
-
-                if (isGrounded())
-                {
-                    rb.velocity = new Vector2(rb.velocity.x, jForce);
-                    canDoubleJump = true;
-
-                }
-                else
-                {
-                    if (canDoubleJump)
-                    {
-                        rb.velocity = new Vector2(rb.velocity.x, jForce);
-                        //after one jump canDoubleJump is set to false 
-                        canDoubleJump = false;
-                    }
-                    /*Player isn't grounded and didn't jump do their initial jump
-                    * Player needs enough time to do both single and double jump
-                    */
-                    if (hangCounter > 0f)
-                    {
-                        rb.velocity = new Vector2(rb.velocity.x, jForce);
-                    }
-                }
-            }
-
-            //Variable Jump
-            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * .5f);
-            }
-
-            //Gliding
-            isGliding = false;
-            if (Input.GetButton("Jump") && rb.velocity.y < 0)
-            {
-                isGliding = true;
-                rb.velocity = new Vector2(rb.velocity.x, -glidingSpeed);
-            }
-        }else
-        {
-            wallJumpCounter -= Time.deltaTime;
         }
         
+        //Coyote Time
+        if (isGrounded())
+        {
+            hangCounter = hangTime;
+        }
+        else
+        {
+            hangCounter -= Time.deltaTime;
+        }
+        
+        //Jump
+        if (Input.GetButtonDown("Jump")) {
+            
+            if (isGrounded())
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jForce);
+                canDoubleJump = true;
+
+            }
+            else
+            {  
+                if (canDoubleJump)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jForce);
+                    //after one jump canDoubleJump is set to false 
+                    canDoubleJump = false;
+                }
+                /*Player isn't grounded and didn't jump do their initial jump
+                * Player needs enough time to do both single and double jump
+                */
+                if (hangCounter > 0f)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jForce);
+                }
+            }
+        }
+        
+        //Variable Jump
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * .5f);
+        }
+
+        //Wall Jump/Slide
+        wallCheck();
+        
+        //Gliding
+        isGliding = false;
+        if(Input.GetButton("Jump") && rb.velocity.y < 0)
+        {
+            isGliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, -glidingSpeed);
+        } 
+        
+        
         anim.SetBool("grounded", isGrounded());
+        anim.SetBool("wallSliding", isWallSliding);
         anim.SetBool("gliding", isGliding);
         anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
-        anim.SetBool("wallSliding", isWallSliding);
-            
-
+        
     }//end of Update()
 
     //check if player is grounded
@@ -177,21 +166,20 @@ public class PlayerController : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.CapsuleCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size, CapsuleDirection2D.Vertical, 0, Vector2.down, .1f, whatIsGround);
         return raycastHit.collider != null;
     }
-    
+
     void wallCheck()
     {
         float horizontalMove = Input.GetAxisRaw("Horizontal");
         if(Physics2D.OverlapCircle(wallCheckCollider.position, wallCheckRadius, whatIsWall) 
             && Mathf.Abs(horizontalMove)>0
-            && rb.velocity.y < 0f)
-           
+            && rb.velocity.y <0
+            && !isGrounded())
         {
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, -slideFactor);
             if (Input.GetButtonDown("Jump"))
             {
-                wallJumpCounter = wallJumpTime;
-                rb.velocity = new Vector2(-horizontalMove * moveSpeed, jForce);
+                rb.velocity = new Vector2(rb.velocity.x, jForce);
             }
         }
         else

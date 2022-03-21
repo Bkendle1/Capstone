@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Attack")]
-    private bool isAttacking = false;
-    private int index = 0;
-    [SerializeField] GameObject attackHitBox;
-
+    
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 10;
     [SerializeField] private float jForce = 15;
@@ -28,7 +24,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float hangTime;
     private float hangCounter;
 
-   //References
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private LayerMask whatIsWall;
 
@@ -51,26 +46,10 @@ public class PlayerController : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
         spriteRender = GetComponent<SpriteRenderer>();
-        attackHitBox.SetActive(false);
     }
 
     void Update()
     {
-
-        //Attack
-
-        if (Input.GetButtonDown("Fire1") && !isAttacking)
-        {
-            isAttacking = true;
-            index++;
-            if(index > 3)
-            {
-                index = 1;
-            }
-            anim.Play("player_attack" + index);
-            StartCoroutine(DoAttack());
-        }
-
         //Dash 
         if (dashRechargeCounter > 0)
         {
@@ -173,15 +152,15 @@ public class PlayerController : MonoBehaviour
         {
             isGliding = true;
             rb.velocity = new Vector2(rb.velocity.x, -glidingSpeed);
-        } 
-        
-        if(!isAttacking)
-        {
+        }
+
+        //if (!pCombat.isAttacking)
+        //{
             anim.SetBool("grounded", isGrounded());
             anim.SetBool("wallSliding", isWallSliding);
             anim.SetBool("gliding", isGliding);
             anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
-        }
+       // }
         
     }//end of Update()
 
@@ -227,11 +206,11 @@ public class PlayerController : MonoBehaviour
         afterImgCounter = timeBetweenAfterImgs;
     }
    
-    private IEnumerator DoAttack()
-    {
-        attackHitBox.SetActive(true);
-        yield return new WaitForSeconds(.3f);
-        attackHitBox.SetActive(false);
-        isAttacking = false;
-    }
+    //private IEnumerator DoAttack()
+    //{
+    //    attackHitBox.SetActive(true);
+    //    yield return new WaitForSeconds(.3f);
+    //    attackHitBox.SetActive(false);
+    //    isAttacking = false;
+    //}
 }
