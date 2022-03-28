@@ -5,9 +5,12 @@ ScriptsOnlyBuild:
     - EnemyAttack
     - EnemyHealth
     - EnemyPatrol
-    - Health
+    - HealthBar
+    - HealthBarFollow
     - PlayerAttack
     - PlayerController
+    - PlayerHealth
+    - RespawnController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -48,6 +51,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -85,32 +92,56 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 614}
     - Class: 114
+      Script: {instanceID: 1446}
+    - Class: 114
+      Script: {instanceID: 1498}
+    - Class: 114
+      Script: {instanceID: 1666}
+    - Class: 114
+      Script: {instanceID: 2256}
+    - Class: 114
+      Script: {instanceID: 2456}
+    - Class: 114
       Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 2984}
+      Script: {instanceID: 2720}
+    - Class: 114
+      Script: {instanceID: 2920}
+    - Class: 114
+      Script: {instanceID: 2986}
     - Class: 114
       Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 3604}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 30628}
+      Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 42834}
+      Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 59496}
+      Script: {instanceID: 29940}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -121,6 +152,12 @@ ScriptsOnlyBuild:
     - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -243,6 +280,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: db5e5356b495d2b019a7da57b7804f0c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyAttack
+  - hash:
+      serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -273,6 +316,12 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: 5c5888a8c36a3338c0384d03610b4f3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyPatrol
+  - hash:
+      serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -297,16 +346,16 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: c21361a69b1466ef48e6e9ed41011815
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthBarFollow
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -339,7 +388,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 883b3aa30f3ebcff95e98b2757acec3d
+      Hash: cc140b4cef416f571531bd802c86005e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyHealth
@@ -471,6 +520,12 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: d7b29aae3b118a29eeed5c5d1289c2fa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerAttack
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -519,10 +574,10 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: dbb0a7b7461c44101df31c40555e8a8d
+      Hash: 19135570a018e3d14614482fc7e3cfde
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Health
+    className: PlayerHealth
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -565,6 +620,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 4b8dff74c0603f3e6246514a412ffcba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthBar
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -663,22 +724,10 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 5c5888a8c36a3338c0384d03610b4f3d
+      Hash: 3c88ac3224c19fdc1360331f0f462bde
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: EnemyPatrol
-  - hash:
-      serializedVersion: 2
-      Hash: c40ba55fd978fe8b1151190ed09b984d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerAttack
-  - hash:
-      serializedVersion: 2
-      Hash: f3e82dcf98054bc8c85208d863eaa91a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyAttack
+    className: RespawnController
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

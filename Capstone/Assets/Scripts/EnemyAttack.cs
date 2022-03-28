@@ -18,14 +18,14 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private LayerMask whoIsPlayer;
     [SerializeField] private float attackRangeX, attackRangeY;
     [SerializeField] private int attack1, attack2, attack3;
-    [SerializeField] private GameObject player;
+
     private EnemyPatrol patrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         patrol = GetComponent<EnemyPatrol>();
-        timeBtwAttack = startTimeBtwAttack; 
+        timeBtwAttack = startTimeBtwAttack;
     }
 
     private void Update()
@@ -33,13 +33,14 @@ public class EnemyAttack : MonoBehaviour
         //is player in attack range
         inAttackRange = Physics2D.OverlapBox(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whoIsPlayer);
 
-        currentDistance = Mathf.Abs(transform.position.x - player.transform.position.x);
+        currentDistance = Mathf.Abs(transform.position.x - PlayerHealth.instance.transform.position.x);
 
         //check if distance from player is near
-        if(currentDistance > distance)
+        if (currentDistance > distance)
         {
             isNear = false;
-        } else
+        }
+        else
         {
             isNear = true;
         }
@@ -50,7 +51,12 @@ public class EnemyAttack : MonoBehaviour
             if (inAttackRange && isNear)
             {
                 patrol.enabled = false;
-                //DealDamage();
+
+                if (attackNum > 3)
+                {
+                    attackNum = 1;
+                }
+
                 anim.Play("attack" + attackNum);
                 timeBtwAttack = startTimeBtwAttack;
             }
@@ -63,31 +69,30 @@ public class EnemyAttack : MonoBehaviour
         {
             timeBtwAttack -= Time.deltaTime;
         }
-        
+
     }
 
     private void DealDamage()
     {
-        
-        PlayerHealth.instance.TakeDamage(damageAmount);
+        if (isNear)
+        {
+            switch (attackNum)
+            {
+                case 1:
+                    damageAmount = attack1;
+                    break;
+                case 2:
+                    damageAmount = attack2;
+                    break;
+                case 3:
+                    damageAmount = attack3;
+                    break;
+            }
+            PlayerHealth.instance.TakeDamage(damageAmount);
+        }
         attackNum++;
-        if (attackNum == 1)
-        {
-            damageAmount = attack1;
-        }
-        else if (attackNum == 2)
-        {
-            damageAmount = attack2;
-        }
-        else if (attackNum == 3)
-        {
-            damageAmount = attack3;
-        }
-        else if (attackNum > 3)
-        {
-            attackNum = 1;
-        }
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

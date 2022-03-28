@@ -34,8 +34,10 @@ public class CameraController : MonoBehaviour
             backBG.position += new Vector3(amountToMove.x, amountToMove.y, 0f);
             frontBG.position += new Vector3(amountToMove.x, amountToMove.y, 0f) * .5f;
             lastPos = transform.position;
-
-
+        } else
+        {
+            //there's a chance the camera can't find the player in between scenes so we reassign the player
+            player = FindObjectOfType<PlayerController>();
         }
     }
 }

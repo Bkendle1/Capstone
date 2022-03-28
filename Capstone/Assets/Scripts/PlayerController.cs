@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
+
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 10;
-    [SerializeField] private float jForce = 15;
+    [SerializeField] public float moveSpeed = 10f;
+    [SerializeField] private float jForce = 15f;
     private bool canDoubleJump;
-    
+
     [Header("Dash")]
     [SerializeField] private float waitAfterDashing;
     private float dashRechargeCounter;
@@ -37,15 +37,19 @@ public class PlayerController : MonoBehaviour
 
     [Header("Wall Jumping/Sliding")]
     [SerializeField] private Transform wallCheckCollider;
-    const float wallCheckRadius = 0.2f;
+    [SerializeField] private float wallCheckRadius = 0.2f;
     [SerializeField] private float slideFactor = 0.2f;
     private bool isWallSliding = false;
-    void Start()
+
+    private PlayerAbilityTracker abilities;
+
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
         spriteRender = GetComponent<SpriteRenderer>();
+        abilities = GetComponent<PlayerAbilityTracker>();
     }
 
     void Update()
@@ -58,7 +62,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonDown("Fire3"))
+            if (Input.GetButtonDown("Fire3") && abilities.canDash)
             {
                 dashCounter = dashTime;
                 showAfterImage();
@@ -73,7 +77,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(dashSpeed * transform.localScale.x, rb.velocity.y);
 
             afterImgCounter -= Time.deltaTime;
-            if(afterImgCounter <= 0)
+            if (afterImgCounter <= 0)
             {
                 showAfterImage();
             }
@@ -99,7 +103,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        
+
         //Coyote Time
         if (isGrounded())
         {
@@ -109,34 +113,32 @@ public class PlayerController : MonoBehaviour
         {
             hangCounter -= Time.deltaTime;
         }
-        
+
         //Jump
-        if (Input.GetButtonDown("Jump")) {
-            
+        if (Input.GetButtonDown("Jump"))
+        {
+
             if (isGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jForce);
                 canDoubleJump = true;
-
             }
             else
-            {  
-                if (canDoubleJump)
+            {
+                if (canDoubleJump && abilities.canDoubleJump)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jForce);
                     //after one jump canDoubleJump is set to false 
                     canDoubleJump = false;
                 }
-                /*Player isn't grounded and didn't jump do their initial jump
-                * Player needs enough time to do both single and double jump
-                */
-                if (hangCounter > 0f)
+                //Hang time
+                if (hangCounter > 0f && abilities.canDoubleJump)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jForce);
                 }
             }
         }
-        
+
         //Variable Jump
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
         {
@@ -145,23 +147,20 @@ public class PlayerController : MonoBehaviour
 
         //Wall Jump/Slide
         wallCheck();
-        
+
         //Gliding
         isGliding = false;
-        if(Input.GetButton("Jump") && rb.velocity.y < 0)
+        if (Input.GetButton("Jump") && rb.velocity.y < 0 && abilities.canGlide)
         {
             isGliding = true;
             rb.velocity = new Vector2(rb.velocity.x, -glidingSpeed);
         }
 
-        //if (!pCombat.isAttacking)
-        //{
-            anim.SetBool("grounded", isGrounded());
-            anim.SetBool("wallSliding", isWallSliding);
-            anim.SetBool("gliding", isGliding);
-            anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
-       // }
-        
+        anim.SetBool("grounded", isGrounded());
+        anim.SetBool("wallSliding", isWallSliding);
+        anim.SetBool("gliding", isGliding);
+        anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
+
     }//end of Update()
 
     //check if player is grounded
@@ -174,14 +173,14 @@ public class PlayerController : MonoBehaviour
     void wallCheck()
     {
         float horizontalMove = Input.GetAxisRaw("Horizontal");
-        if(Physics2D.OverlapCircle(wallCheckCollider.position, wallCheckRadius, whatIsWall) 
+        if (Physics2D.OverlapCircle(wallCheckCollider.position, wallCheckRadius, whatIsWall)
             && horizontalMove != 0
             && rb.velocity.y < 0
             && !isGrounded())
         {
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, -slideFactor);
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && abilities.canDoubleJump)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jForce);
             }
@@ -195,7 +194,7 @@ public class PlayerController : MonoBehaviour
     {
         //create a copy of the afterimage prefab
         SpriteRenderer img = Instantiate(afterImage, transform.position, transform.rotation);
-        
+
         img.sprite = spriteRender.sprite;
         img.transform.localScale = transform.localScale;
         img.color = afterImgColor;
@@ -205,12 +204,12 @@ public class PlayerController : MonoBehaviour
 
         afterImgCounter = timeBetweenAfterImgs;
     }
-   
-    //private IEnumerator DoAttack()
-    //{
-    //    attackHitBox.SetActive(true);
-    //    yield return new WaitForSeconds(.3f);
-    //    attackHitBox.SetActive(false);
-    //    isAttacking = false;
-    //}
+    private void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+    }
+    public void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
+    }
 }

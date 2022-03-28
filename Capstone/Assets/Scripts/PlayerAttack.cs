@@ -8,25 +8,32 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float startTimeBtwAttack;
     [SerializeField] private Transform attackPos;
     
+    private int attackDamage;
     [SerializeField] private LayerMask whoIsEnemy;
-    [SerializeField] private int attackDamage;
     [SerializeField] private float attackRangeX, attackRangeY;
     [SerializeField] private int attack1, attack2, attack3;
     private Animator anim;
     private int attackNum = 0; //attack index
+    private PlayerController pc;
+    private float originalSpeed;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        pc = GetComponent<PlayerController>();
+        originalSpeed = pc.moveSpeed;
     }
 
     private void Update()
     {
+        
         if(timeBtwAttack <= 0)
         {
             //then you can attack
             if (Input.GetButtonDown("Fire1"))
             {
+                pc.moveSpeed = originalSpeed;
+
                 attackNum++;
                 if (attackNum == 1)
                 {
@@ -51,6 +58,9 @@ public class PlayerAttack : MonoBehaviour
                 }
                 timeBtwAttack = startTimeBtwAttack;
                 
+            } else
+            { 
+                pc.moveSpeed = originalSpeed;
             }
         } else
         {

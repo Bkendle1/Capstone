@@ -223,16 +223,16 @@ TextureImporter:
     second: Warrior_Sheet-Effect_72
   - first:
       213: -5219189033981844993
-    second: Warrior_Sheet-Effect_73
+    second: shot0
   - first:
       213: 8048201136183370311
-    second: Warrior_Sheet-Effect_74
+    second: shot1
   - first:
       213: -5008098951225157325
-    second: Warrior_Sheet-Effect_75
+    second: shot2
   - first:
       213: 3500951761227251082
-    second: Warrior_Sheet-Effect_76
+    second: shot3
   - first:
       213: -848416997838638187
     second: attackThree0
@@ -1945,7 +1945,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Sheet-Effect_73
+      name: shot0
       rect:
         serializedVersion: 2
         x: 69
@@ -1966,7 +1966,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Sheet-Effect_74
+      name: shot1
       rect:
         serializedVersion: 2
         x: 138
@@ -1987,7 +1987,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Sheet-Effect_75
+      name: shot2
       rect:
         serializedVersion: 2
         x: 207
@@ -2008,7 +2008,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Sheet-Effect_76
+      name: shot3
       rect:
         serializedVersion: 2
         x: 276
