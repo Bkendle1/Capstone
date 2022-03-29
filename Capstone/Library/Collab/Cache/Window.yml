@@ -14,16 +14,1569 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Graphics/Animations/BossDoor.meta
+    - Assets/Graphics/Animations/BossDoor/BossDoor.controller
+    - Assets/Graphics/Animations/BossDoor/BossDoor.controller.meta
+    - Assets/Graphics/Animations/BossDoor/bossDoorClosed.anim
+    - Assets/Graphics/Animations/BossDoor/bossDoorClosed.anim.meta
+    - Assets/Graphics/Animations/BossDoor/bossDoorClosing.anim
+    - Assets/Graphics/Animations/BossDoor/bossDoorClosing.anim.meta
+    - Assets/Graphics/Animations/BossDoor/bossDoorOpened.anim
+    - Assets/Graphics/Animations/BossDoor/bossDoorOpened.anim.meta
+    - Assets/Graphics/Animations/BossDoor/bossDoorOpening.anim
+    - Assets/Graphics/Animations/BossDoor/bossDoorOpening.anim.meta
+    - Assets/Graphics/Animations/Door.meta
+    - Assets/Graphics/Animations/Door/door_closed.anim
+    - Assets/Graphics/Animations/Door/door_closed.anim.meta
+    - Assets/Graphics/Animations/Door/door_closing.anim
+    - Assets/Graphics/Animations/Door/door_closing.anim.meta
+    - Assets/Graphics/Animations/Door/door_open.anim
+    - Assets/Graphics/Animations/Door/door_open.anim.meta
+    - Assets/Graphics/Animations/Door/door_opening.anim
+    - Assets/Graphics/Animations/Door/door_opening.anim.meta
+    - Assets/Graphics/Animations/Door/sprite.controller
+    - Assets/Graphics/Animations/Door/sprite.controller.meta
+    - Assets/Graphics/Animations/Humanoid.meta
+    - Assets/Graphics/Animations/Humanoid/Humanoid.controller
+    - Assets/Graphics/Animations/Humanoid/Humanoid.controller.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_attack1.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_attack1.anim.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_attack2.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_attack2.anim.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_attack3.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_attack3.anim.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_death.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_death.anim.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_hit.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_hit.anim.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_idle.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_idle.anim.meta
+    - Assets/Graphics/Animations/Humanoid/mutant_walk.anim
+    - Assets/Graphics/Animations/Humanoid/mutant_walk.anim.meta
+    - Assets/Graphics/Animations/Ogre.meta
+    - Assets/Graphics/Animations/Ogre/Ogre.controller
+    - Assets/Graphics/Animations/Ogre/Ogre.controller.meta
+    - Assets/Graphics/Animations/Ogre/ogre_attack1.anim
+    - Assets/Graphics/Animations/Ogre/ogre_attack1.anim.meta
+    - Assets/Graphics/Animations/Ogre/ogre_attack2.anim
+    - Assets/Graphics/Animations/Ogre/ogre_attack2.anim.meta
+    - Assets/Graphics/Animations/Ogre/ogre_attack3.anim
+    - Assets/Graphics/Animations/Ogre/ogre_attack3.anim.meta
+    - Assets/Graphics/Animations/Ogre/ogre_death.anim
+    - Assets/Graphics/Animations/Ogre/ogre_death.anim.meta
+    - Assets/Graphics/Animations/Ogre/ogre_idle.anim
+    - Assets/Graphics/Animations/Ogre/ogre_idle.anim.meta
+    - Assets/Graphics/Animations/Ogre/ogre_takeHit.anim
+    - Assets/Graphics/Animations/Ogre/ogre_takeHit.anim.meta
+    - Assets/Graphics/Animations/Ogre/ogre_walk.anim
+    - Assets/Graphics/Animations/Ogre/ogre_walk.anim.meta
+    - Assets/Graphics/Animations/Owlet.meta
+    - Assets/Graphics/Animations/Owlet/Owlet.controller
+    - Assets/Graphics/Animations/Owlet/Owlet.controller.meta
+    - Assets/Graphics/Animations/Owlet/owlet_idle.anim
+    - Assets/Graphics/Animations/Owlet/owlet_idle.anim.meta
+    - Assets/Graphics/Animations/Owlet/owlet_jump.anim
+    - Assets/Graphics/Animations/Owlet/owlet_jump.anim.meta
+    - Assets/Graphics/Animations/Owlet/owlet_run.anim
+    - Assets/Graphics/Animations/Owlet/owlet_run.anim.meta
+    - Assets/Graphics/Animations/Player.meta
+    - Assets/Graphics/Animations/Player/Player.controller
+    - Assets/Graphics/Animations/Player/player_attack1.anim
+    - Assets/Graphics/Animations/Player/player_attack2.anim
+    - Assets/Graphics/Animations/Player/player_attack2.anim.meta
+    - Assets/Graphics/Animations/Player/player_attack3.anim
+    - Assets/Graphics/Animations/Player/player_attack3.anim.meta
+    - Assets/Graphics/Animations/Player/player_dead.anim
+    - Assets/Graphics/Animations/Player/player_dead.anim.meta
+    - Assets/Graphics/Animations/Player/player_glide.anim
+    - Assets/Graphics/Animations/Player/player_hurt.anim
+    - Assets/Graphics/Animations/Player/player_hurt.anim.meta
+    - Assets/Graphics/Animations/Player/player_idle.anim
+    - Assets/Graphics/Animations/Player/player_shot.anim
+    - Assets/Graphics/Animations/Player/player_shot.anim.meta
+    - Assets/Graphics/Animations/Player/player_wallSlide.anim
+    - Assets/Graphics/Animations/Reptilian.meta
+    - Assets/Graphics/Animations/Reptilian/Reptilian.controller
+    - Assets/Graphics/Animations/Reptilian/Reptilian.controller.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_attack1.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_attack1.anim.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_attack2.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_attack2.anim.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_attack3.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_attack3.anim.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_death.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_death.anim.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_idle.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_idle.anim.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_takeHit.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_takeHit.anim.meta
+    - Assets/Graphics/Animations/Reptilian/reptilian_walk.anim
+    - Assets/Graphics/Animations/Reptilian/reptilian_walk.anim.meta
+    - Assets/Graphics/Animations/Shot.meta
+    - Assets/Graphics/Animations/Shot/Fire Explosion.controller
+    - Assets/Graphics/Animations/Shot/Fire Explosion.controller.meta
+    - Assets/Graphics/Animations/Shot/Firebolt SpriteSheet_0.controller
+    - Assets/Graphics/Animations/Shot/Firebolt SpriteSheet_0.controller.meta
+    - Assets/Graphics/Animations/Shot/shotExplosion.anim
+    - Assets/Graphics/Animations/Shot/shotExplosion.anim.meta
+    - Assets/Graphics/Animations/Shot/shotFire.anim
+    - Assets/Graphics/Animations/Shot/shotFire.anim.meta
+    - Assets/Graphics/Animations/VFX.meta
+    - Assets/Graphics/Animations/VFX/Acid VFX 01_0.controller
+    - Assets/Graphics/Animations/VFX/Acid VFX 01_0.controller.meta
+    - Assets/Graphics/Animations/VFX/acid.anim
+    - Assets/Graphics/Animations/VFX/acid.anim.meta
+    - Assets/Graphics/Animations/VFX/darkDeath.anim
+    - Assets/Graphics/Animations/VFX/darkDeath.anim.meta
+    - Assets/Graphics/Animations/VFX/darkDeathFX.controller
+    - Assets/Graphics/Animations/VFX/darkDeathFX.controller.meta
+    - Assets/Graphics/Animations/VFX/heal.anim
+    - Assets/Graphics/Animations/VFX/heal.anim.meta
+    - Assets/Graphics/Animations/VFX/heal0.controller
+    - Assets/Graphics/Animations/VFX/heal0.controller.meta
+    - Assets/Graphics/Animations/Wind Golem.meta
+    - Assets/Graphics/Animations/Wind Golem/Wind Golem.controller
+    - Assets/Graphics/Animations/Wind Golem/windGolem_attack1.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_attack1.anim.meta
+    - Assets/Graphics/Animations/Wind Golem/windGolem_attack2.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_attack2.anim.meta
+    - Assets/Graphics/Animations/Wind Golem/windGolem_attack3.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_attack3.anim.meta
+    - Assets/Graphics/Animations/Wind Golem/windGolem_die.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_die.anim.meta
+    - Assets/Graphics/Animations/Wind Golem/windGolem_hit.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_hit.anim.meta
+    - Assets/Graphics/Animations/Wind Golem/windGolem_idle.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_walk.anim
+    - Assets/Graphics/Animations/Wind Golem/windGolem_walk.anim.meta
+    - Assets/Graphics/Charge Man.png.meta
+    - Assets/Graphics/Dark Platformer SET2/1. main platforms.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Individual Frames/Idle/Idle1.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Attack1.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Attack2.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Attack3.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Death.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Idle.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Take Hit.png.meta
+    - Assets/Graphics/Mobs/Sprites/MutantHumanoid/Sprite Sheets/Walk.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Attack1.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Attack2.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Attack3.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Death.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Idle.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Take Hit.png.meta
+    - Assets/Graphics/Mobs/Sprites/Ogre/Sprite Sheets/Walk.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/Attack1.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/Attack2.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/Attack3.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/Death.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/Idle.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/Take Hit.png.meta
+    - Assets/Graphics/Mobs/Sprites/Reptilian/Sprite Sheets/walk.png.meta
+    - Assets/Graphics/Mobs/Sprites/SimpleCircle.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Individual Frames/Idle/Idle1.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Attack1.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Attack2.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Attack3.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Death.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Idle.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Moving.png.meta
+    - Assets/Graphics/Mobs/Sprites/WindGolem/Sprite Sheets/Take Hit.png.meta
+    - Assets/Graphics/Owlet.meta
+    - Assets/Graphics/Owlet/Double_Jump_Dust_5.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Attack1_4.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Attack2_6.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Climb_4.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Death_8.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Hurt_4.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Idle_4.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Jump_8.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Push_6.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Run_6.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Throw_4.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Walk+Attack_6.png.meta
+    - Assets/Graphics/Owlet/Owlet_Monster_Walk_6.png.meta
+    - Assets/Graphics/Owlet/Rock1.png.meta
+    - Assets/Graphics/Owlet/Rock2.png.meta
+    - Assets/Graphics/Owlet/Walk_Run_Push_Dust_6.png.meta
+    - Assets/Graphics/VFX.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Acid VFX 01.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Hit1.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Hit2.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Hit3.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Hit4.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Hit5.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Hit6.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable1.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable10.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable2.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable3.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable4.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable5.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable6.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable7.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable8.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 1/Separated Frames/Acid VFX 01
+      Repeatable9.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Acid VFX 02Ending.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Acid VFX 02Repeatable.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02
+      Ending1.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02
+      Ending2.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02
+      Ending3.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02
+      Ending4.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02
+      Ending5.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02
+      Ending6.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable1.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable10.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable11.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable12.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable2.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable3.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable4.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable5.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable6.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable7.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable8.png.meta
+    - Assets/Graphics/VFX/Acid VFX 01 - 02/Acid VFX 2/Separated Frames/Acid VFX 02Repeatable9.png.meta
+    - Assets/Graphics/VFX/Animation Pack.meta
+    - Assets/Graphics/VFX/Animation Pack/Crystal.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Energy ball.meta
+    - Assets/Graphics/VFX/Animation Pack/Energy ball/EnergyBall.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Energy ball/energyBallImpact.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Fire.meta
+    - Assets/Graphics/VFX/Animation Pack/Fire/Burn.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Fire/Line of fire.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Fire/Shine.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Hit Effect.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Ice.meta
+    - Assets/Graphics/VFX/Animation Pack/Ice/Ball of ice.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Ice/Burst of ice.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Magic Mirror.png.meta
+    - Assets/Graphics/VFX/Animation Pack/Thunder.png.meta
+    - Assets/Graphics/VFX/Animation Pack/explosioneffect.png.meta
+    - Assets/Graphics/VFX/Animation Pack/projetilNew.png.meta
+    - Assets/Graphics/VFX/Blood FX Lite.meta
+    - Assets/Graphics/VFX/Blood FX Lite/JASONTOMLEE_BLOOD_GUSH_1.gif.meta
+    - Assets/Graphics/VFX/Blood FX Lite/JASONTOMLEE_BLOOD_GUSH_2.gif.meta
+    - Assets/Graphics/VFX/Blood FX Lite/JASONTOMLEE_BLOOD_GUSH_3.gif.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Dark VFX 1 (40x32).png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)1.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)10.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)11.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)12.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)13.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)14.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)15.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)16.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)17.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)2.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)3.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)4.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)5.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)6.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)7.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)8.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1
+      (40x32)9.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Dark VFX 2 (48x64).png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)1.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)10.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)11.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)12.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)13.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)14.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)15.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)16.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)2.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)3.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)4.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)5.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)6.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)7.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)8.png.meta
+    - Assets/Graphics/VFX/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2
+      (48x64)9.png.meta
+    - Assets/Graphics/VFX/Earth Effect 01.meta
+    - Assets/Graphics/VFX/Earth Effect 01/Earth projectile Spritesheet .png.meta
+    - Assets/Graphics/VFX/Earth Effect 01/Impact Spritesheet.png.meta
+    - Assets/Graphics/VFX/Earth Effect 01/Irregular rock Spritesheet.png.meta
+    - Assets/Graphics/VFX/Earth Effect 02.meta
+    - Assets/Graphics/VFX/Earth Effect 02/Earth Bump.png.meta
+    - Assets/Graphics/VFX/Earth Effect 02/Earth Wall.png.meta
+    - Assets/Graphics/VFX/Effects.meta
+    - Assets/Graphics/VFX/Effects/Effect 1 - Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effect 2 - Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effect 3 - Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effect 4 - Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effect1 Gameboy Spritesheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effect3 Gameboy Spritesheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effect4 Gameboy Spritesheet.png.meta
+    - Assets/Graphics/VFX/Effects/Effectst2 Gameboy Spritesheet.png.meta
+    - Assets/Graphics/VFX/Fire Effect 1.meta
+    - Assets/Graphics/VFX/Fire Effect 1/Fire Breath SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Fire Effect 1/Fire Breath hit effect SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Fire Effect 1/Firebolt SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Fire Effect 2.meta
+    - Assets/Graphics/VFX/Fire Effect 2/Explosion 2 SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Fire Effect 2/Explosion SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Heal Effect Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Heal Gameboy Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Ice VFX 1 Hit.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Ice VFX 1 Start.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/IceVFX 1 Repeatable.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit1.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit2.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit3.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit4.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit5.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit6.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit7.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit8.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable1.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable10.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable2.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable3.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable4.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable5.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable6.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable7.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable8.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable9.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Start1.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Start2.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Start3.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Ice VFX 2 Active.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Ice VFX 2 Ending.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Ice VFX 2 Start.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active1.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active2.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active3.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active4.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active5.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active6.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active7.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active8.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active9.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending1.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending10.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending11.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending12.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending13.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending14.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending15.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending16.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending17.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending18.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending2.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending3.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending4.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending5.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending6.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending7.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending8.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending9.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start1.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start2.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start3.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start4.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start5.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start6.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start7.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start8.png.meta
+    - Assets/Graphics/VFX/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start9.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_held_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_pickup0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_pickup0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_pickup0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_pickup0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_swing0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_throw0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_throw0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_throw0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_throw0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirlWeapon_Boys_walk0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_falling0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_falling0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_falling0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_falling0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_landing0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_landing0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_landing0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_start0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_start0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_start0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioAirPK_start0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioClothesline0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioClothesline0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioClothesline0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioClothesline0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioClothesline0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioPavementKisser0013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioShouldertoss0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioShouldertoss0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioShouldertoss0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioShouldertoss0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_KunioShouldertoss0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0014_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0015_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0016_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0017_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0018_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0019_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0020_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0021_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0022_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiAcornBreaker0023_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_falling0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_falling0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_falling0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_falling0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_landing0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_landing0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_landing0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_start0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_start0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_start0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiPileDriver_start0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiTableFlip0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiTableFlip0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiTableFlip0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_RikiTableFlip0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_Rikiflipkick0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_Rikiflipkick0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_Rikiflipkick0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_SchoolGirl_Rikiflipkick0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Begging_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Begging_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Begging_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Block_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Block_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Block_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0014_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0015_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0016_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0017_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0018_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0019_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0020_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0021_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0022_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0023_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0024_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0025_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0026_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0027_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0028_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0029_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0030_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0031_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0032_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Blownback_0033_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_Transition_0001.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_Transition_0002.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Climb_Transition_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Crescent_Kick_0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Dazed_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Dazed_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Dazed_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Dazed_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Get_Hits_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Groundhit_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Groundhit_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Groundhit_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Attack_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Attack_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Attack_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Attack_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Attack_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Idle_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Pickup_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Pickup_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Run_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Throw_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Throw_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0001_anio #290492.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0002_anio #284097.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0003_anio #287258.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0004_anio #281628.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0005_anio #284297.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0006_anio #282989.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0007_anio #291156.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0008_anio #288888.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0009_anio #280983.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0010_anio #281420.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0011_anio #290402.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0012_anio #290939.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Hands_Walk_0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Hit_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Hit_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Hit_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Release_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Release_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Release_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Held_Release_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Idle_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jab_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Jump_Knee_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Kick_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0014_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0015_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0016_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0017_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0018_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0019_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0020_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0021_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0022_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0023_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0024_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0025_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0026_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0027_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0028_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0029_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0030_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0031_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0032_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Knockdown_0033_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Run_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0014_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0015_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0016_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0017_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0018_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0019_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0020_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0021_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0022_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0023_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0024_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0025_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Taunt_0026_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_End_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_End_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_End_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_End_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Loop_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Start_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Start_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Tornado_Kick_Start_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Walk_0012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Wallhit_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Wallhit_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Attack_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Attack_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Attack_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Attack_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Attack_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Pickup_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Pickup_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_School_Girl_Weapon_Throw_0008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_MisakoSuplex0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_MisakoSuplex0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_MisakoSuplex0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_MisakoSuplex0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_MisakoSuplex0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_bouncer_throw_victim001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_bouncer_throw_victim002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_bouncer_throw_victim003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_bouncer_throw_victim004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_bouncer_throw_victim005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo1_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo2_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo3_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo4_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo5_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo6_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo7_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo8_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_frankensteiner_ooo9_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_stungun_victim014_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_volleyspike_000_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_volleyspike_001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_volleyspike_002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_Schoolgirl_volleyspike_003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_schoolgirl_pogokick0001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_schoolgirl_pogokick0002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_schoolgirl_pogokick0003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_schoolgirl_pogokick0004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/RCG_schoolgirl_pogokick0005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_000_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_001_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_002_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_003_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_004_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_005_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_006_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_007_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_008_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_009_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_010_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_011_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_012_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_013_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_014_anio.png.meta
+    - Assets/Graphics/VFX/Nintendo Switch - River City Girls - School Girl/School
+      Girl/rcg_schoolgirl_powerbomb_015_anio.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/192x192.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/192x192/pipo-btleffect206_192.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/192x192/pipo-btleffect206h_192.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/192x192/pipo-btleffect207_192.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/192x192/pipo-btleffect208_192.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/192x192/pipo-btleffect208h_192.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/480x480.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/480x480/pipo-btleffect206_480.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/480x480/pipo-btleffect206h_480.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/480x480/pipo-btleffect207_480.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/480x480/pipo-btleffect208_480.png.meta
+    - Assets/Graphics/VFX/Pipoya VFX HEXShield/480x480/pipo-btleffect208h_480.png.meta
+    - Assets/Graphics/VFX/Shard voice clips.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel1.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel10.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel11.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel12.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel13.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel14.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel15.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel16.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel17.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel18.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel19.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel2.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel20.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel21.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel3.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel4.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel5.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel6.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel7.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel8.wav.meta
+    - Assets/Graphics/VFX/Shard voice clips/08.Miriel9.wav.meta
+    - Assets/Graphics/VFX/Slash Gameboy Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Slash Sprite Sheet.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/Smoke VFX 1.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/Smoke VFX 2.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/Smoke VFX3.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A1.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A2.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A3.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A4.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A5.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A6.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A7.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A8.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 1 Separated Frames/Smoke VFX A9.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B1.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B10.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B11.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B12.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B2.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B3.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B4.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B5.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B6.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B7.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B8.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 2 Separated frames/Smoke VFX B9.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C1.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C2.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C3.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C4.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C5.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C6.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C7.png.meta
+    - Assets/Graphics/VFX/Smoke Effect 01/VFX 3 Seprated Frames/Smoke VFX C8.png.meta
+    - Assets/Graphics/VFX/Thrust.meta
+    - Assets/Graphics/VFX/Thrust/Thrust 2 SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Thrust/Thrust Gameboy Spritesheet.png.meta
+    - Assets/Graphics/VFX/Thrust/Thrust2 Gameboy Spritesheet.png.meta
+    - Assets/Graphics/VFX/Thrust/Thrusts 1 SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 01.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Projectile 2.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Projectile 2/Projectile 2 w blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Projectile 2/Projectile 2 wo blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Thunder Hit.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Thunder Hit/Thunder hit w blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Thunder Hit/Thunder hit wo blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Thunder Projectile 1.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Thunder Projectile 1/Thunder projectile1
+      w blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 01/Thunder Projectile 1/Thunder projectile1
+      wo blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 02.meta
+    - Assets/Graphics/VFX/Thunder Effect 02/Thunder Splash.meta
+    - Assets/Graphics/VFX/Thunder Effect 02/Thunder Splash/Thunder splash w blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 02/Thunder Splash/Thunder splash wo blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 02/Thunder Strike.meta
+    - Assets/Graphics/VFX/Thunder Effect 02/Thunder Strike/Thunderstrike w blur.png.meta
+    - Assets/Graphics/VFX/Thunder Effect 02/Thunder Strike/Thunderstrike wo blur.png.meta
+    - Assets/Graphics/VFX/Water Effect 01.meta
+    - Assets/Graphics/VFX/Water Effect 01/Preview.meta
+    - Assets/Graphics/VFX/Water Effect 01/Preview/Water Spike 30 fps Preview.gif.meta
+    - Assets/Graphics/VFX/Water Effect 01/Preview/Water Splash 30  fps Preview.gif.meta
+    - Assets/Graphics/VFX/Water Effect 01/Preview/Water StartUp Preview.gif.meta
+    - Assets/Graphics/VFX/Water Effect 01/Preview/Water StartUp2 Preview.gif.meta
+    - Assets/Graphics/VFX/Water Effect 01/Start Up.meta
+    - Assets/Graphics/VFX/Water Effect 01/Start Up/Water StartUp 1 SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Water Effect 01/Start Up/Water StartUp 2 SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Water Effect 01/Start up Reapeated Frames for 30FPS.meta
+    - Assets/Graphics/VFX/Water Effect 01/Start up Reapeated Frames for 30FPS/Water
+      StartUp 1 SpriteSheet(30fps).png.meta
+    - Assets/Graphics/VFX/Water Effect 01/Start up Reapeated Frames for 30FPS/Water
+      StartUp 2 SpriteSheet (30 Fps).png.meta
+    - Assets/Graphics/VFX/Water Effect 01/Water Effect SpriteSheet.meta
+    - Assets/Graphics/VFX/Water Effect 01/Water Effect SpriteSheet/Water Spike 01
+      - SpriteSheet.png.meta
+    - Assets/Graphics/VFX/Water Effect 01/Water Effect SpriteSheet/Water Splash 01
+      - Spritesheet.png.meta
+    - Assets/Graphics/VFX/Water Effect 2.meta
+    - Assets/Graphics/VFX/Water Effect 2/Water Ball - Spritesheet.meta
+    - Assets/Graphics/VFX/Water Effect 2/Water Ball - Spritesheet/WaterBall - Impact.png.meta
+    - Assets/Graphics/VFX/Water Effect 2/Water Ball - Spritesheet/WaterBall - Startup
+      and Infinite.png.meta
+    - Assets/Graphics/VFX/Water Effect 2/Water Blast - Spritesheet.meta
+    - Assets/Graphics/VFX/Water Effect 2/Water Blast - Spritesheet/Water Blast -
+      End.png.meta
+    - Assets/Graphics/VFX/Water Effect 2/Water Blast - Spritesheet/Water Blast -
+      Startup and Infinite.png.meta
+    - Assets/Graphics/VFX/Wind Effect 01.meta
+    - Assets/Graphics/VFX/Wind Effect 01/Wind Breath.png.meta
+    - Assets/Graphics/VFX/Wind Effect 01/Wind Hit Effect.png.meta
+    - Assets/Graphics/VFX/Wind Effect 01/Wind Projectile.png.meta
+    - Assets/Graphics/VFX/Wind Effect 02.meta
+    - Assets/Graphics/VFX/Wind Effect 02/Air Burst.png.meta
+    - Assets/Graphics/VFX/Wind Effect 02/Air Explosion.png.meta
+    - Assets/Graphics/VFX/Wind Effect 02/Explosion Startup .png.meta
+    - Assets/Graphics/VFX/Wind Effect 02/Preparing Burst.png.meta
+    - Assets/Graphics/VFX/Wind Effect 02/Pull in.png.meta
+    - Assets/Graphics/Warrior/Sprite Sheet/Warrior_Sheet-Effect.png.meta
+    - Assets/Graphics/Warrior/Sprite Sheet/Warrior_SheetnoEffect.png.meta
+    - Assets/Graphics/bossDoor.png.meta
+    - Assets/Graphics/door_idle.png.meta
+    - Assets/Graphics/door_open.png.meta
+    - Assets/Graphics/hearts.meta
+    - Assets/Graphics/hearts/Bar.png.meta
+    - Assets/Graphics/hearts/HalfHeart.png.meta
+    - Assets/Graphics/hearts/HealthBar.png.meta
+    - Assets/Graphics/hearts/fullHeart.png.meta
+    - Assets/Graphics/hearts/partialHeart.png.meta
+    - Assets/Graphics/whiteSquare.jpg.meta
+    - Assets/Level1.unity
+    - Assets/Level1.unity.meta
+    - Assets/Prefabs/Enemies.meta
     - Assets/Prefabs/Enemies/Humanoid.prefab
+    - Assets/Prefabs/Enemies/Humanoid.prefab.meta
+    - Assets/Prefabs/Enemies/Ogre.prefab
+    - Assets/Prefabs/Enemies/Ogre.prefab.meta
+    - Assets/Prefabs/Enemies/Reptilian.prefab
+    - Assets/Prefabs/Enemies/Reptilian.prefab.meta
+    - Assets/Prefabs/Enemies/Wind Golem.prefab
+    - Assets/Prefabs/Enemies/Wind Golem.prefab.meta
+    - Assets/Prefabs/GolemEffect.prefab
+    - Assets/Prefabs/GolemEffect.prefab.meta
+    - Assets/Prefabs/Health Bar.prefab
+    - Assets/Prefabs/Health Bar.prefab.meta
+    - Assets/Prefabs/LevelBits.meta
     - Assets/Prefabs/LevelBits/Level Bits.prefab
+    - Assets/Prefabs/LevelBits/Level Bits.prefab.meta
     - Assets/Prefabs/LevelBits/Player.prefab
+    - Assets/Prefabs/LevelBits/Player.prefab.meta
+    - Assets/Prefabs/LevelBits/Respawn Controller.prefab
+    - Assets/Prefabs/LevelBits/Respawn Controller.prefab.meta
+    - Assets/Prefabs/LevelBits/UI .prefab
+    - Assets/Prefabs/LevelBits/UI .prefab.meta
+    - Assets/Prefabs/MutantEffect.prefab
+    - Assets/Prefabs/MutantEffect.prefab.meta
+    - Assets/Prefabs/OgreEffect.prefab
+    - Assets/Prefabs/OgreEffect.prefab.meta
+    - Assets/Prefabs/Pickups.meta
+    - Assets/Prefabs/Pickups/FullHealthPickup.prefab
+    - Assets/Prefabs/Pickups/FullHealthPickup.prefab.meta
+    - Assets/Prefabs/Pickups/HealthPickupEffect.prefab
+    - Assets/Prefabs/Pickups/HealthPickupEffect.prefab.meta
+    - Assets/Prefabs/Pickups/partialHealthPickup.prefab
+    - Assets/Prefabs/Pickups/partialHealthPickup.prefab.meta
+    - Assets/Prefabs/PlayerEffect.prefab
+    - Assets/Prefabs/PlayerEffect.prefab.meta
     - Assets/Prefabs/PlayerShot.prefab
+    - Assets/Prefabs/PlayerShot.prefab.meta
+    - Assets/Prefabs/ReptillianEffect.prefab
+    - Assets/Prefabs/ReptillianEffect.prefab.meta
+    - Assets/Prefabs/VFX.meta
+    - Assets/Prefabs/VFX/Fire Explosion.prefab
+    - Assets/Prefabs/VFX/Fire Explosion.prefab.meta
+    - Assets/Prefabs/VFX/darkDeathFX.prefab
+    - Assets/Prefabs/VFX/darkDeathFX.prefab.meta
+    - Assets/Scenes/Level1.unity
+    - Assets/Scenes/Level1.unity.meta
     - Assets/Scenes/SampleScene.unity
     - Assets/Scenes/testBoss.unity
-    - Assets/Scripts/EnemyAttack.cs
+    - Assets/Scenes/testBoss.unity.meta
+    - Assets/Scripts/BossDoorController.cs.meta
+    - Assets/Scripts/BulletController.cs.meta
+    - Assets/Scripts/CheckPoint.cs.meta
+    - Assets/Scripts/DoorController.cs.meta
+    - Assets/Scripts/EnemyAttack.cs.meta
+    - Assets/Scripts/EnemyHealth.cs.meta
+    - Assets/Scripts/EnemyPatrol.cs
+    - Assets/Scripts/EnemyPatrol.cs.meta
+    - Assets/Scripts/HealthBar.cs.meta
+    - Assets/Scripts/HealthBarFollow.cs.meta
+    - Assets/Scripts/HealthPickup.cs.meta
+    - Assets/Scripts/Patrol.meta
+    - Assets/Scripts/Patrol/HumanoidPatrol.cs
+    - Assets/Scripts/Patrol/HumanoidPatrol.cs.meta
+    - Assets/Scripts/PlayerAbilityTracker.cs.meta
+    - Assets/Scripts/PlayerAttack.cs.meta
+    - Assets/Scripts/PlayerController.cs
+    - Assets/Scripts/PlayerHealth.cs.meta
+    - Assets/Scripts/PlayerShot.cs.meta
+    - Assets/Scripts/RespawnController.cs.meta
+    - Assets/Scripts/UIController.cs.meta
+    - ProjectSettings/EditorBuildSettings.asset
     - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

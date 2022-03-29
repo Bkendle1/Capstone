@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float slideFactor = 0.2f;
     private bool isWallSliding = false;
 
+    private CapsuleCollider2D capsule;
     private PlayerAbilityTracker abilities;
 
     void Awake()
@@ -50,6 +51,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRender = GetComponent<SpriteRenderer>();
         abilities = GetComponent<PlayerAbilityTracker>();
+        capsule = GetComponent<CapsuleCollider2D>();    
     }
 
     void Update()
@@ -213,3 +215,4 @@ public class PlayerController : MonoBehaviour
         transform.position = GameObject.FindWithTag("StartPos").transform.position;
     }
 }
+
